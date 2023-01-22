@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <style>
+    body {
+      background: url(images/attendance.jpg) no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      height: 100vh;
+    }
+
+    table {
+      font-family: comic sans ms;
+      border-collapse: collapse;
+      width: 100%;
+      position: center;
+      background: rgba(0, 0, 0, .6);
+    }
+
+    h2 {
+      margin: auto;
+      color: #ffff99;
+      width: 900px;
+      font-weight: bold;
+      text-align: center;
+      left: 50%;
+      font-family: comic sans ms;
+      user-select: none;
+      background-color: #331a00;
+      padding-top: 3px padding-right: 0px;
+      padding-bottom: 3px;
+      padding-left: 0px;
+      background: rgba(0, 0, 0, .5);
+    }
+
+    .f {
+      margin: auto;
+      font-family: comic sans ms;
+      color: #ffff99;
+      position: center;
+      width: 200px;
+      padding: 3px 23px 6px 10px;
+      background: rgba(0, 0, 0, .5);
+
+    }
+
+
+    .a {
+
+      font-size: 18px;
+      padding: 7px;
+      width: 100%;
+      border: 1px solid #ffff99;
+      color: #ffffe8;
+      display: block;
+      background: transparent;
+
+    }
+
+
+    th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 12px;
+      text-align: left;
+      background-color: #331a00;
+      color: white;
+      font-size: 20px;
+    }
+
+
+    td {
+      color: #ffff99;
+      border: 1px solid #331a00;
+      text-align: left;
+      padding: 8px;
+
+    }
+
+    tr:nth-child(odd) {
+      background-color: #331a00;
+    }
+
+    .buttons {
+      text-align: center;
+    }
+
+    .buttons input {
+      text-align: center;
+      height: 50px;
+      width: 150px;
+      font-size: 25px;
+      font-weight: 600;
+      color: black;
+      background: #ffff99;
+      outline: none;
+      cursor: pointer;
+      border: 3px solid #331a00;
+      border-radius: 25px;
+      transition: .4s;
+      font-family: comic sans ms;
+
+    }
+
+    .buttons input:hover {
+      background: #cc0000;
+    }
+  </style>
+
+
+
+</head>
+
+<body class="b">
+
+
+  <h2 style="font-size: 45px">Student Attendance Sheet</h2>
+  <h2 style="font-size: 20px"> Session 2016-2017 </h2>
+  <br>
+  <form>
+
+    <div class="f">
+      <label for="course">Course </label>
+      <input class="a" type="course" name="course" id="course" required>
+
+      <label for="date"> Date</label>
+      <input class="a" type="date" name="date" id="date" required>
+
+
+    </div>
+    <br>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Student Id</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>Naima Sultana Ayesha</td>
+        <td>1972</td>
+        <td>
+          <input type="radio" id="Present" name="naima" value="Present" required>
+          <label for="Present">Present &nbsp;&nbsp; &nbsp;&nbsp;</label>
+          <input type="radio" id="absent" name="naima" value="absent" required>
+          <label for="absent">Absent</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Nusrat Jahan</td>
+        <td>1977</td>
+        <td>
+          <input type="radio" id="Present" name="Nusrat" value="Present" required>
+          <label for="Present">Present &nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="radio" id="absent" name="Nusrat" value="absent" required>
+          <label for="absent">Absent</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Moumita Chanda</td>
+        <td>1979</td>
+        <td>
+          <input type="radio" id="Present" name="Moumita" value="Present" required>
+          <label for="Present">Present &nbsp;&nbsp; &nbsp;&nbsp;</label>
+          <input type="radio" id="absent" name="Moumita" value="absent" required>
+          <label for="absent">Absent</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Maysha Fahmida Bristy</td>
+        <td>1980</td>
+        <td>
+          <input type="radio" id="Present" name="Maysha" value="Present" required>
+          <label for="Present">Present &nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="radio" id="absent" name="Maysha" value="absent" required>
+          <label for="absent">Absent</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Sraboni Ghosh Joya</td>
+        <td>1983</td>
+        <td>
+          <input type="radio" id="Present" name="Joya" value="Present" required>
+          <label for="Present">Present &nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="radio" id="absent" name="Joya" value="absent" required>
+          <label for="absent">Absent</label>
+
+        </td>
+      </tr>
+      <tr>
+        <td>Jarin Tasnim Ritu</td>
+        <td>1987</td>
+        <td>
+          <input type="radio" id="Present" name="Ritu" value="Present" required>
+          <label for="Present">Present &nbsp;&nbsp; &nbsp;&nbsp;</label>
+          <input type="radio" id="absent" name="Ritu" value="absent" required>
+          <label for="absent">Absent</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Shahadat Hossain </td>
+        <td>1990</td>
+        <td>
+          <input type="radio" id="Present" name="Shahadat" value="Present" required>
+          <label for="Present">Present &nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="radio" id="absent" name="Shahadat" value="absent" required>
+          <label for="absent">Absent</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Aminul Islam Shanto</td>
+        <td>1993</td>
+        <td>
+          <input type="radio" id="Present" name="Shanto" value="Present" required>
+          <label for="Present">Present &nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="radio" id="absent" name="Shanto" value="absent" required>
+          <label for="absent">Absent</label>
+        </td>
+      </tr>
+      <tr>
+        <td> Tanvir Ahmed Kollol </td>
+        <td>1997</td>
+        <td>
+          <input type="radio" id="Present" name="A" value="Present" required>
+          <label for="Present">Present &nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="radio" id="absent" name="A" value="absent" required>
+          <label for="absent">Absent</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Nahian Imtiaz Hasan</td>
+        <td>2009</td>
+        <td>
+          <input type="radio" id="Present" name="Nahian" value="Present" required>
+          <label for="Present">Present &nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <span> </span>
+          <input type="radio" id="absent" name="Nahian" value="absent" required>
+          <label for="absent">Absent</label>
+        </td>
+      </tr>
+
+
+    </table>
+
+
+
+    <br>
+    <div class="buttons">
+
+      <input type="submit">
+
+    </div>
+
+  </form>
+
+
+</body>
+
+</html>
